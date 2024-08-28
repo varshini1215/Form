@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link href="form.css" rel="stylesheet"></link>
+</head>
+<body >
+    
+    <form class="sheet" >
+        <h1 style="color:red;text-align: center;">REGISTRATION FORM</h1>
+        <div>
+        <div>
+         <label>Name:</label>
+        <input class="space" type="text" placeholder="Enter your name" >
+        </div>
+        <br/>
+        <div>
+            <label>Age:</label>
+            <input class="space"type="number" placeholder="Enter your age">
+        </div>
+        <br/>
+        <div>
+        <label>Email:</label>
+        <input class="space" type="mail" placeholder="Enter your mail Id" required>
+        </div>
+        <br/>
+        <div>
+        <label>Phone No:</label>
+        <input class="phone" type="number"placeholder="Enter the number" required onclick="Phone()">
+        </div>
+        <br/>
+        <div>
+            <label>Address:</label>
+            <input class="space"type="text" placeholder="Enter your address">
+        </div>
+    <br/>
+    <div>
+        <label>Prefered Course</label>
+        <input class="space" type="text">
+    </div>
+    <br/>
+    <div>
+        <label>Registration No:</label>
+        <input class="space" type="number">
+    </div>
+<br/>
+        <div>
+        <label>SSLC Percentage:</label>
+        <input class="space" type="number">
+        </div>
+        <br/>
+        <div>
+            <label>HSC Percentage</label>
+            <input class="space"type="number">
+        </div>
+        <br/>
+        <div>
+            <label>Passport photo:</label>
+            <input class="space"type="image">
+        </div>
+        <br/>
+        <div>
+            <label>10th Marksheet:</label>
+            <input class="space"type="file" required>
+        </div>
+        <br/>
+        <div>
+            <label>12th Marksheet:</label>
+            <input class="space"type="file" required>
+        </div>
+        <br/>
+        <button onclick="alert('Please check the fields')">Submit</button>
+        <br/>
+        </div>
+    </form>
+    <script>
+        
+        function Phone(){
+                if(input.length>10 && input.length<10 ){
+                    alert('Please check the field')
+                }
+        }
+    </script>
+</body>
+
+</html>
